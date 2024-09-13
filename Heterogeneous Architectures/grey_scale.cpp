@@ -18,7 +18,7 @@ int main(){
     int width, height, bpp;
     clock_t start = clock();
 
-    unsigned char* image = stbi_load("../Heterogeneous Architectures/londres.jpg", &width, &height, &bpp, CHANNEL_NUM);
+    unsigned char* image = stbi_load("../Heterogeneous Architectures/images/londres.jpg", &width, &height, &bpp, CHANNEL_NUM);
 
     if(image == NULL){
         cout << "Error in loading the image\n";
@@ -36,7 +36,7 @@ int main(){
 
     cout << "Loaded image with a widht of "<< width << " a height of "<< height << " Channel number "<< CHANNEL_NUM << endl;
 
-    stbi_write_png("../Heterogeneous Architectures/londres_grey.jpg", width,height, CHANNEL_NUM, image, width * CHANNEL_NUM);
+    stbi_write_png("../Heterogeneous Architectures/images/londres_grey.jpg", width,height, CHANNEL_NUM, image, width * CHANNEL_NUM);
 
 
 

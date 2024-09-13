@@ -33,7 +33,7 @@ int main(){
 
     cout << "Loaded image with a widht of "<< width << " a height of "<< height << " Channel number "<< CHANNEL_NUM << endl;
 
-    stbi_write_png("../Heterogeneous Architectures/londres_green.jpg", width,height, CHANNEL_NUM, image, width * CHANNEL_NUM);
+    stbi_write_png("../Heterogeneous Architectures/iamges/londres_green.jpg", width,height, CHANNEL_NUM, image, width * CHANNEL_NUM);
 
 
 

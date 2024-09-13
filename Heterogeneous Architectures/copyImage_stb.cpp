@@ -21,7 +21,7 @@ int main(){
 
     int width, height, bpp;
 
-    unsigned char* rgb_image = stbi_load("../Heterogeneous Architectures/londres.jpg", &width, &height, &bpp, CHANNEL_NUM);
+    unsigned char* rgb_image = stbi_load("../Heterogeneous Architectures/images/londres.jpg", &width, &height, &bpp, CHANNEL_NUM);
 
     if(rgb_image == NULL){
         cout << "Error in loading the image\n";

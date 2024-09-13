@@ -28,7 +28,7 @@ int main(){
     ofstream imagein;
     ifstream imageout;
 
-    imagein.open("C:/Users/Alex Viana/Desktop/impact_lab/imagem.ppm");
+    imagein.open("../Heterogeneous Architectures/images/imagem.ppm");
 
 
     if(imagein.is_open()){

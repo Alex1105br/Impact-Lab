@@ -7,7 +7,7 @@ int main(){
     
     fstream image;
 
-    image.open("../Heterogeneous Architectures/imagem.ppm");
+    image.open("../Heterogeneous Architectures/images/imagem.ppm");
     
 
     if(image.is_open()){

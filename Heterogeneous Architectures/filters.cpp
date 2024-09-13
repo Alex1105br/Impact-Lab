@@ -29,7 +29,7 @@ void negative_filter(unsigned char* image, int width, int height){
 
     cout << "Loaded image with a widht of "<< width << " a height of "<< height << " Channel number "<< CHANNEL_NUM << endl;
 
-    stbi_write_png("../Heterogeneous Architectures/dead_cells_negative.jpg", width,height, CHANNEL_NUM, image, width * CHANNEL_NUM);
+    stbi_write_png("../Heterogeneous Architectures/images/dead_cells_negative.jpg", width,height, CHANNEL_NUM, image, width * CHANNEL_NUM);
 
     //return image;
 }
@@ -45,7 +45,7 @@ void grey_scale(unsigned char* image, int width, int height){
 
     cout << "Loaded image with a widht of "<< width << " a height of "<< height << " Channel number "<< CHANNEL_NUM << endl;
 
-    stbi_write_png("../Heterogeneous Architectures/dead_cells_grey.jpg", width,height, CHANNEL_NUM, image, width * CHANNEL_NUM);
+    stbi_write_png("../Heterogeneous Architectures/images/dead_cells_grey.jpg", width,height, CHANNEL_NUM, image, width * CHANNEL_NUM);
 }
 
 
@@ -64,7 +64,7 @@ void red_filter(unsigned char* image, int width, int height){
 
     cout << "Loaded image with a width of " << width << " a height of " << height << " Channel number " << CHANNEL_NUM << endl;
 
-    stbi_write_png("../Heterogeneous Architectures/samurai_red.jpg", width, height, CHANNEL_NUM, image, width * CHANNEL_NUM);
+    stbi_write_png("../Heterogeneous Architectures/images/samurai_red.jpg", width, height, CHANNEL_NUM, image, width * CHANNEL_NUM);
 }
 
 
@@ -76,7 +76,7 @@ int main(){
 
     
 
-    unsigned char* image = stbi_load("../Heterogeneous Architectures/samurai.jpg", &width, &height, &bpp, CHANNEL_NUM);
+    unsigned char* image = stbi_load("../Heterogeneous Architectures/images/dead_cells.jpg", &width, &height, &bpp, CHANNEL_NUM);
 
     if(image == NULL){
         cout << "Error in loading the image\n";

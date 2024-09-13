@@ -10,11 +10,11 @@ int main(){
     clock_t start = clock();
     ifstream image_read;
 
-    image_read.open("../Heterogeneous Architectures/apollo.ppm");
+    image_read.open("../Heterogeneous Architectures/images/apollo.ppm");
 
     ofstream image_write;
 
-    image_write.open("../Heterogeneous Architectures/new_image.ppm");
+    image_write.open("../Heterogeneous Architectures/iamges/new_image.ppm");
 
     string type = "", width = "", height = "", RGBMax = "";
 
