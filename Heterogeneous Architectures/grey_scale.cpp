@@ -29,9 +29,9 @@ int main(){
 
     for(int i=0; i<width*height*4; i+=4){
         unsigned char grey = image[i] * 0.2126 + image[i+1] * 0.7152 + image[i+2] * 0.0722;
-        image[i] = grey; //in the channel red
-        image[i+1] = grey; //in the channel green
-        image[i+2] = grey; //in the channel blue
+        image[i] = grey; //red
+        image[i+1] = grey; //green
+        image[i+2] = grey; //blue
     }
 
     cout << "Loaded image with a widht of "<< width << " a height of "<< height << " Channel number "<< CHANNEL_NUM << endl;
