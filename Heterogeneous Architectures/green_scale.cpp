@@ -34,10 +34,13 @@ int main(){
     cout << "Loaded image with a widht of "<< width << " a height of "<< height << " Channel number "<< CHANNEL_NUM << endl;
 
     stbi_write_png("../Heterogeneous Architectures/londres_green.jpg", width,height, CHANNEL_NUM, image, width * CHANNEL_NUM);
+
+
+
     clock_t end = clock();
     double elapsed_time = double(end - start) / CLOCKS_PER_SEC;
 
-    std::cout << "Runtime: " << elapsed_time << " seconds" << std::endl;
+    cout << "Runtime: " << elapsed_time << " seconds" << std::endl;
     
     stbi_image_free(image);
 
